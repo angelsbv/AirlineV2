@@ -35,16 +35,18 @@ else
                     <input asp-for="FlgArrival" class="form-control" />
                     <span asp-validation-for="FlgArrival" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="FlgFare" class="control-label">Tarifa</label>
-                    <input asp-for="FlgFare" class="form-control" />
-                    <span asp-validation-for="FlgFare" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="FlgCategory" class="control-label">Tarifa</label>
-                    <input asp-for="FlgCategory" class="form-control" />
-                    <span asp-validation-for="FlgCategory" class="text-danger"></span>
-                </div>
+                <sbc-row-frm class="row">
+                    <sbc-col-frm-lft class="col col-md-6 form-group">
+                        <label asp-for="FlgFare" class="control-label">Tarifa</label>
+                        <input asp-for="FlgFare" class="form-control" />
+                        <span asp-validation-for="FlgFare" class="text-danger"></span>
+                    </sbc-col-frm-lft>
+                    <sbc-col-frm-rgth class="col col-md-6 form-group">
+                        <label asp-for="FlgCategory" class="control-label">Categoría</label>
+                        <input asp-for="FlgCategory" class="form-control" />
+                        <span asp-validation-for="FlgCategory" class="text-danger"></span>
+                    </sbc-col-frm-rgth>
+                </sbc-row-frm>
                 <div class="form-group">
                     <input type="submit" value="Registrar" class="btn btn-outline-primary" style="width:100%;" />
                 </div>
